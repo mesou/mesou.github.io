@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -319,51 +319,14 @@
 
       
         
-          
-            <h1 id="创建个人Github账号"><a href="#创建个人Github账号" class="headerlink" title="创建个人Github账号"></a>创建个人Github账号</h1><p><a href="">待完善…</a></p>
-<h1 id="建立博客仓库"><a href="#建立博客仓库" class="headerlink" title="建立博客仓库"></a>建立博客仓库</h1><p><a href="">待完善…</a></p>
-<h1 id="安装node-js和Git"><a href="#安装node-js和Git" class="headerlink" title="安装node.js和Git"></a>安装node.js和Git</h1><h4 id="注意：安装时尽量选择最新版本，这两个软件版本不匹配时会导致后续步骤失败。"><a href="#注意：安装时尽量选择最新版本，这两个软件版本不匹配时会导致后续步骤失败。" class="headerlink" title="注意：安装时尽量选择最新版本，这两个软件版本不匹配时会导致后续步骤失败。"></a>注意：安装时尽量选择最新版本，这两个软件版本不匹配时会导致后续步骤失败。</h4><ul>
-<li><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js官网下载</a>，安装保持默认即可。</p>
-<blockquote>
-<p>检测是否成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网下载</a>，安装保持默认即可。</p>
-<blockquote>
-<p>检测是否成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-</ul>
-<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><ul>
-<li>建立blog文件夹</li>
-<li>在blog文件夹内点击鼠标右键，单击Git Bash Here</li>
-<li>依次输入以下代码(等待时间可能较长，请耐心等待…)：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli   //开始安装Hexo</span><br><span class="line">hexo -v  //检查hexo是否安装成功</span><br><span class="line">hexo init  //初始化该文件夹</span><br><span class="line">npm install   //安装所需要的组件</span><br><span class="line">hexo g  //生成网页</span><br><span class="line">hexo s  //将网页放在本地服务器</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<blockquote>
-<p><strong>如以上操作无误，在浏览器输入<code>localhost:4000</code>即可访问自带的网页，在Git Bash界面输入Ctrl+C结束访问。</strong></p>
-</blockquote>
-<h1 id="将网页发布到Github上"><a href="#将网页发布到Github上" class="headerlink" title="将网页发布到Github上"></a>将网页发布到Github上</h1><ul>
-<li>复制github博客仓库链接</li>
-<li><p>修改blog文件夹下的配置文件<code>_config.yml</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">  type: git  </span><br><span class="line">  repository: git@github.com:*****/*****.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在Git Bash上输入<code>npm install hexo-deployer-git --save</code></p>
-</li>
-<li>github配置SSH Key。</li>
-<li>上输入<code>hexo d</code>，若出现<code>INFO Deploy done: git</code>则为成功。</li>
-<li>在浏览器上输入网址查看。</li>
-</ul>
-<h1 id="发博文"><a href="#发博文" class="headerlink" title="发博文"></a>发博文</h1><ul>
-<li>方法1：在blog\source_posts文件夹下新建<code>first blog.md</code>文件即可创建</li>
-<li>方法2：在git bash 中输入<code>hexo new &quot;first blog&quot;</code>或<code>hexo new post &quot;first blog&quot;</code>即可创建</li>
-</ul>
-<p><strong>注意：文章是用<a href="">markdown语法(待完善…)</a>写的，</strong> 写完后，输入<code>hexo d -g</code>部署到github上</p>
-<h1 id="使用模板NexT"><a href="#使用模板NexT" class="headerlink" title="使用模板NexT"></a>使用模板NexT</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
-<h3 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">使用说明</a></h3>
-          
+          <p>在Github上搭建属于自己的博客<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/03/在Github上搭建个人博客-基于Hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -590,6 +553,22 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/mesou" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:mesou@foxmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -635,7 +614,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 -->
 
 
@@ -735,6 +714,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
