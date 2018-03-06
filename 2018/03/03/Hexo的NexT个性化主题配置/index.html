@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://mesou.github.io/2018/03/03/Hexo的NexT个性化主题配置/1.png">
 <meta property="og:image" content="http://mesou.github.io/2018/03/03/Hexo的NexT个性化主题配置/2.png">
 <meta property="og:image" content="http://mesou.github.io/2018/03/03/Hexo的NexT个性化主题配置/3.png">
-<meta property="og:updated_time" content="2018-03-06T07:43:32.725Z">
+<meta property="og:updated_time" content="2018-03-06T09:04:21.749Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo的NexT个性化主题配置">
 <meta name="twitter:description" content="摘要： 本文介绍了如何打造个性化博客页面，包括在博文中添加图片以及在末端添加评论。其他常见设置可阅读底部的其他参考。">
@@ -423,8 +423,8 @@
 
       
         <p>摘要： 本文介绍了如何打造个性化博客页面，包括在博文中添加图片以及在末端添加评论。其他常见设置可阅读底部的其他参考。</p>
-<hr>
 <a id="more"></a>
+<hr>
 <h3 id="博文添加图片"><a href="#博文添加图片" class="headerlink" title="博文添加图片"></a>博文添加图片</h3><ol>
 <li><p>把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>改为<code>true</code></p>
 </li>
@@ -486,7 +486,7 @@
   
     <div>
     
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
   
@@ -504,7 +504,7 @@
   <p><span>本文标题:</span><a href="/2018/03/03/Hexo的NexT个性化主题配置/">Hexo的NexT个性化主题配置</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Francis Kwei 的个人博客">Francis Kwei</a></p>
   <p><span>发布时间:</span>2018年03月03日 - 19:03</p>
-  <p><span>最后更新:</span>2018年03月06日 - 15:03</p>
+  <p><span>最后更新:</span>2018年03月06日 - 17:03</p>
   <p><span>原始链接:</span><a href="/2018/03/03/Hexo的NexT个性化主题配置/" title="Hexo的NexT个性化主题配置">http://mesou.github.io/2018/03/03/Hexo的NexT个性化主题配置/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mesou.github.io/2018/03/03/Hexo的NexT个性化主题配置/"  aria-label="复制成功！"></i></span>
   </p>
@@ -576,6 +576,21 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
       
       
 
@@ -743,7 +758,7 @@
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
                 推荐阅读
@@ -751,7 +766,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://mesou.github.io/navi/" title="网址导航" target="_blank">网址导航</a>
+                    <a href="https://mesou.github.io/navi/" title="网址导航，个性化导航" target="_blank">网址导航，个性化导航</a>
                   </li>
                 
               </ul>
@@ -857,6 +872,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1025,6 +1046,30 @@
 
   <script>
     
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "topCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 

@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Kwei&#39;s Blog">
 <meta property="og:description" content="简介：本文简要介绍Javascript的基本语法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T07:43:37.340Z">
+<meta property="og:updated_time" content="2018-03-06T09:04:40.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript基础教程">
 <meta name="twitter:description" content="简介：本文简要介绍Javascript的基本语法。">
@@ -408,8 +408,8 @@
 
       
         <p>简介：本文简要介绍Javascript的基本语法。</p>
-<hr>
 <a id="more"></a>
+<hr>
 <p>Javascript也称JS，是一种嵌入到HTML页面中的编程语言，</p>
 <ul>
 <li>变量<code>var a = 10;</code>注意分号</li>
@@ -569,7 +569,7 @@
   
     <div>
     
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
   
@@ -630,6 +630,21 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
       
       
 
@@ -793,7 +808,7 @@
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
                 推荐阅读
@@ -801,7 +816,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://mesou.github.io/navi/" title="网址导航" target="_blank">网址导航</a>
+                    <a href="https://mesou.github.io/navi/" title="网址导航，个性化导航" target="_blank">网址导航，个性化导航</a>
                   </li>
                 
               </ul>
@@ -907,6 +922,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1075,6 +1096,30 @@
 
   <script>
     
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "topCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 

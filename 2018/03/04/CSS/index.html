@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Kwei&#39;s Blog">
 <meta property="og:description" content="摘要：本文简要介绍HTML的基本格式/语法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T07:43:30.270Z">
+<meta property="og:updated_time" content="2018-03-06T09:04:08.535Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS基础教程">
 <meta name="twitter:description" content="摘要：本文简要介绍HTML的基本格式/语法。">
@@ -408,8 +408,8 @@
 
       
         <p>摘要：本文简要介绍HTML的基本格式/语法。</p>
-<hr>
 <a id="more"></a>
+<hr>
 <p>cascading style Sheet 层叠样式表，用于控制网页外观。</p>
 <ul>
 <li><p>外部样式表：最理想的方式，将CSS与HTML放在不同的文件中；使用<code>&lt;link&gt;</code>标签进行引用（<code>&lt;link&gt;</code>标签在<code>&lt;head&gt;</code>中）。如：</p>
@@ -703,7 +703,7 @@
   
     <div>
     
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
   
@@ -764,6 +764,21 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
       
       
 
@@ -931,7 +946,7 @@
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
                 推荐阅读
@@ -939,7 +954,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://mesou.github.io/navi/" title="网址导航" target="_blank">网址导航</a>
+                    <a href="https://mesou.github.io/navi/" title="网址导航，个性化导航" target="_blank">网址导航，个性化导航</a>
                   </li>
                 
               </ul>
@@ -1045,6 +1060,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1213,6 +1234,30 @@
 
   <script>
     
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "topCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 

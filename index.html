@@ -407,7 +407,6 @@
       
         
           <p>简介：本文简要介绍Javascript的基本语法。</p>
-<hr>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/04/Javascript/#more" rel="contents">
@@ -605,7 +604,6 @@
       
         
           <p>摘要：本文简要介绍HTML的基本格式/语法。</p>
-<hr>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/04/CSS/#more" rel="contents">
@@ -803,7 +801,6 @@
       
         
           <p>摘要：本文简要介绍HTML的基本语法。</p>
-<hr>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/04/HTML/#more" rel="contents">
@@ -1012,7 +1009,6 @@
       
         
           <p>摘要： 本文介绍了如何打造个性化博客页面，包括在博文中添加图片以及在末端添加评论。其他常见设置可阅读底部的其他参考。</p>
-<hr>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/03/Hexo的NexT个性化主题配置/#more" rel="contents">
@@ -1221,7 +1217,6 @@
       
         
           <p>摘要：本文介绍了如何在Github上搭建基于Hexo的博客，包括在GitHub上建立博客、安装辅助软件以及更换博客主题的基本操作。</p>
-<hr>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/03/在Github上搭建个人博客-基于Hexo/#more" rel="contents">
@@ -1382,7 +1377,7 @@
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
                 推荐阅读
@@ -1390,7 +1385,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://mesou.github.io/navi/" title="网址导航" target="_blank">网址导航</a>
+                    <a href="https://mesou.github.io/navi/" title="网址导航，个性化导航" target="_blank">网址导航，个性化导航</a>
                   </li>
                 
               </ul>
@@ -1480,6 +1475,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1642,6 +1643,30 @@
 
   <script>
     
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "topCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 
